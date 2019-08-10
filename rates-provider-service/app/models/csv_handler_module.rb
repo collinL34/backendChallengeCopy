@@ -1,5 +1,4 @@
 require 'csv'
-require 'awesome_print'
 
 module CsvHandlerModule  
   def self.read_file(file_path)

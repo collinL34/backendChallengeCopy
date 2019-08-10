@@ -1,2 +1,0 @@
-class ShippingCompanyRates < ApplicationRecord
-end
