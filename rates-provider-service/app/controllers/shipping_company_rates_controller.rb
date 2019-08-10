@@ -1,7 +1,7 @@
 class ShippingCompanyRatesController < ApplicationController
   def get
-    all_shipping_rates = ShippingCompanyRates.all
+    shipping_company_rates_data_dump = ShippingCompanyRate.all
 
-    render json: all_shipping_rates    
+    render json: shipping_company_rates_data_dump    
   end
 end
