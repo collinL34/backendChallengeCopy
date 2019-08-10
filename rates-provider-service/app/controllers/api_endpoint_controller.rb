@@ -4,7 +4,7 @@ class ApiEndpointController < ApplicationController
               SELECT 
                 *
               FROM shipping_companies company
-              join shipping_company_rates AS rates
+              JOIN shipping_company_rates AS rates
                 ON rates.company_id = company.id;
             "
     data_res = ActiveRecord::Base.connection.execute(sql_q)
