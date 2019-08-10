@@ -1,7 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'awesome_print'
+
+shipping_company_data = CsvHandlerModule.provider_model_csv_data_convert('../service_provider_data.csv')
+
+shipping_company_data.each do |shipping_company_object|
+  ap ShippingCompany.create(shipping_company_object)
+end
+
+# shipping_company_rates_data = CsvHandlerModule.provider_rates_model_csv_data_convert('../rate_data.csv')
