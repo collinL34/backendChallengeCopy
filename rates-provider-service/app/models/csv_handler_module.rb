@@ -12,10 +12,10 @@ module CsvHandlerModule
 
     csv_array.map do |csv_row|
       flat_shipping_rate_usd = if csv_row['currency'] == 'EUR'
-                                (csv_row['flat shipping rate'].to_f * 1.18115).round(2)
-                              else
-                                csv_row['flat shipping rate'].to_f
-                              end
+                                 (csv_row['flat shipping rate'].to_f * 1.18115).round(2)
+                               else
+                                 csv_row['flat shipping rate'].to_f
+                               end
 
       {
         :company_name => csv_row['name'],
@@ -29,10 +29,10 @@ module CsvHandlerModule
 
     csv_array.map do |csv_row|
       shipping_rate_usd = if csv_row['currency'] == 'EUR'
-                                (csv_row['rate'].to_f * 1.18115).round(2)
-                              else
-                                csv_row['rate'].to_f
-                              end
+                            (csv_row['rate'].to_f * 1.18115).round(2)
+                          else
+                            csv_row['rate'].to_f
+                          end
 
       {
         :shipping_rate_usd => shipping_rate_usd,

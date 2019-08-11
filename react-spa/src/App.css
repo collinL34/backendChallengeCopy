@@ -34,3 +34,15 @@ td {
   text-align: left;
   width: auto;
 }
+
+table, th, td  {
+  border: 1px solid black;;
+}
+
+div {
+  text-align: left;
+}
+
+.Header {
+  text-align: center;
+}

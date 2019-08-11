@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # GET route for client data dump
-  get '/rates_data_dump' => 'api_endpoint#data_dump'
+  get '/rates_data_dump' => 'api_endpoints#data_dump'
 
   # basic routes for deep dive into data
   get '/shipping_rates' => 'shipping_company_rates#get'

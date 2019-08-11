@@ -1,4 +1,4 @@
-class ApiEndpointController < ApplicationController
+class ApiEndpointsController < ApplicationController
   def data_dump
     sql_q = "
               SELECT 
