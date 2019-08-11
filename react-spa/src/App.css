@@ -24,3 +24,13 @@ li {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
+thead {
+  width: auto;
+  text-align: left;
+}
+
+td {
+  text-align: left;
+  width: auto;
+}
